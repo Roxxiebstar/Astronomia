@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #e6e1e1;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #000205;
+    color: white;
+}
+
+.logo {
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Mantener proporción */
+    display: block; /* Hacer que el logo ocupe una línea completa */
+    margin: 0 auto 20px; /* Centrar y dar margen */
+}
+
+.header-image {
+    width: 190px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
+    margin: 20px 0; /* Espacio alrededor de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos del menú de navegación */
+nav {
+    margin: 20px 0; /* Margen alrededor del nav */
+}
+
+.nav-menu {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0; /* Sin padding */
+    text-align: center; /* Centrar texto */
+}
+
+.nav-menu > li {
+    display: inline-block; /* Mostrar elementos en línea */
+    position: relative; /* Posición relativa para el dropdown */
+    margin: 0 15px; /* Margen entre los elementos del menú */
+}
+
+.nav-menu a {
+    text-decoration: none; /* Sin subrayado */
+    color: rgb(244, 244, 244); /* Color del texto */
+    padding: 10px 15px; /* Espaciado dentro de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.nav-menu a:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo del menú desplegable */
+.dropdown {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posicionamiento absoluto */
+    background: #000205; /* Color de fondo del dropdown */
+    z-index: 1; /* Asegura que esté por encima */
+    margin-top: 10px; /* Margen encima */
+    padding: 10px 0; /* Espaciado vertical */
+}
+
+.nav-menu li:hover .dropdown {
+    display: block; /* Mostrar al pasar el ratón */
+}
+
+.dropdown li {
+    display: block; /* Mostrar cada elemento del dropdown en bloque */
+    text-align: left; /* Alinear a la izquierda */
+}
+
+.dropdown a {
+    padding: 10px 20px; /* Espaciado dentro de los enlaces del dropdown */
+    color: white; /* Color del texto */
+}
+
+.dropdown a:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Contenedor para el contenido lateral y central */
+.container {
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espaciado entre columnas */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrar el contenedor */
+}
+
+/* Estilo de las barras laterales */
+.left-sidebar, .right-sidebar {
+    flex: 1; /* Cada barra lateral ocupa el mismo espacio */
+    padding: 20px;
+    background-color: #f0f0f0; /* Fondo ligero para las barras laterales */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0 10px; /* Espacio entre las barras y el contenido central */
+}
+
+/* Estilo para el contenido central */
+main {
+    flex: 2; /* El contenido central ocupa más espacio */
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+/* Estilo para las imágenes en las barras laterales */
+.sidebar-image {
+    width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
